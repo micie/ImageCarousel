@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Images </title>
+	<script language="javascript" src="jquery-1.6.1.min.js" ></script>
+	<script language="javascript" src="jscroll_left_right/jscroll_left_right.js" ></script>
+	<script language="javascript">
+		$(document).ready(function(){
+			var para={
+				each_move_items:3
+				,visible_items:3
+				,btn_width:20
+				,btn_height:47
+				,btn_left:"jscroll_left_right/btn_left.png"
+				,btn_right:"jscroll_left_right/btn_right.png"
+			};
+			$("#demo1").jscroll_left_right(para);
+			var para2={
+				each_move_items:1
+				,visible_items:3
+				,btn_width:20
+				,btn_height:47
+				,btn_left:"jscroll_left_right/btn_left.png"
+				,btn_right:"jscroll_left_right/btn_right.png"
+				,animate_move:true
+			};
+			$("#demo2").jscroll_left_right(para2);
+		});
+	</script>
+	<style>
+		body{
+			text-align:left;
+		}
+		#demo1,#demo2{
+			height:220px;
+			width:1080px;
+			margin:20px auto;
+		}
+		.item{
+			float:left;
+			margin:0 10px 0 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo1">
+		<div class="item"><img src="img/1.jpg"></div>
+		<div class="item"><img src="img/2.jpg"></div>
+		<div class="item"><img src="img/3.jpg"></div>
+		<div class="item"><img src="img/4.jpg"></div>
+		<div class="item"><img src="img/5.jpg"></div>
+		<div class="item"><img src="img/6.jpg"></div>
+		<div class="item"><img src="img/7.jpg"></div>
+		<div class="item"><img src="img/8.jpg"></div>
+		<div class="item"><img src="img/9.jpg"></div>
+		<div class="item"><img src="img/10.jpg"></div>
+		<div class="item"><img src="img/11.jpg"></div>
+		<div class="item"><img src="img/12.jpg"></div>
+	</div>
+	<div id="demo2">
+		<div class="item"><img src="img/1.jpg"></div>
+		<div class="item"><img src="img/2.jpg"></div>
+		<div class="item"><img src="img/3.jpg"></div>
+		<div class="item"><img src="img/4.jpg"></div>
+		<div class="item"><img src="img/5.jpg"></div>
+		<div class="item"><img src="img/6.jpg"></div>
+		<div class="item"><img src="img/7.jpg"></div>
+		<div class="item"><img src="img/8.jpg"></div>
+		<div class="item"><img src="img/9.jpg"></div>
+		<div class="item"><img src="img/10.jpg"></div>
+		<div class="item"><img src="img/11.jpg"></div>
+		<div class="item"><img src="img/12.jpg"></div>
+	</div>
+</body>
+</html>
